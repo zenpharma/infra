@@ -1,3 +1,5 @@
+code  ~/devops/zenpharma/infra/envs/dev/main.tf
+
 locals {
   project = "pharma"
   env     = "dev"
