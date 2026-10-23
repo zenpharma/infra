@@ -34,3 +34,6 @@ Thumbs.db
 # IDE
 .idea/
 .vscode/
+
+
+echo "*.swp" >> .gitignore
