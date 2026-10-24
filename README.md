@@ -6,6 +6,7 @@ This guide walks you through setting up the zen-pharma infrastructure on your ow
 
 ---
 
+
 ## Table of Contents
 
 1. [Architecture Overview](#1-architecture-overview)
