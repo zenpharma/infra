@@ -5,6 +5,8 @@ locals {
   region  = "us-east-1"
 }
 
+# Testing GitHub Actions PR workflow
+
 data "aws_caller_identity" "current" {}
 
 module "vpc" {
