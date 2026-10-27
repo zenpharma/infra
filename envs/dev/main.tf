@@ -2,7 +2,7 @@
 locals {
   project = "pharma"
   env     = "dev"
-  region  = "us-east-1"
+  region  = "ap-south-1"
 }
 
 data "aws_caller_identity" "current" {}
@@ -28,10 +28,10 @@ module "eks" {
   vpc_id             = module.vpc.vpc_id
   subnet_ids         = module.vpc.private_subnets
   kubernetes_version = "1.33"
-  instance_types     = ["t3.small"]
+  instance_types     = ["c7i-flex.large"]
   min_size           = 1
-  max_size           = 5
-  desired_size       = 4
+  max_size           = 2
+  desired_size       = 1
 }
 
 module "rds" {

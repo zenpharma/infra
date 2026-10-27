@@ -27,7 +27,7 @@ variable "kubernetes_version" {
 variable "instance_types" {
   description = "EC2 instance types for the node group"
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["c7i-flex.large"]
 }
 
 variable "desired_size" {
